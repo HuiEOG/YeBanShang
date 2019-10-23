@@ -1,0 +1,89 @@
+@charset "utf-8";
+/*�����*/
+#aside{
+	width:236px;
+	float:right;
+}
+#aside #file{
+	width:236px;
+	margin-bottom:20px;
+}
+.aside-h{
+	position:relative;
+	width:236px;
+	height:30px;
+	font-size:17px;
+	line-height:30px;
+	cursor:default;
+	color:#002131;
+	font-style:italic;
+	border-bottom:1px dashed #afa3a3;
+ }
+#file .file-list{
+	position:relative;
+	width:200px;
+	height:23px;
+	margin:5px 0px 5px 5px;
+	font-size:15px;
+	line-height:20px;
+	text-indent:20px;
+	font-style:italic;
+}
+#file .file-list:hover{
+	color:#006da2;
+}
+#file .file-list:before{
+	content:'';
+	display:block;
+	position:absolute;
+	top:1px;
+	left:1px;
+	width:15px;
+	height:15px;
+	background:url('../../images/smallpic/filespan.png') no-repeat 0 0/cover;
+}
+#file .file-list:hover:before{
+	background:url('../../images/smallpic/filespan2.png') no-repeat 0 0/cover;
+}
+#file  .f-list-line{
+	display:block;
+	position:absolute;
+	bottom:-1px;
+	left:20px;
+	width:0px;
+	height:0px;
+	transition:.7s;
+	border:1px solid #006da2;
+	opacity:0;
+}
+#file .file-list:hover .f-list-line,#file-g .file-drop:hover .f-list-line{
+	width:110px;
+	opacity:1;
+}
+/*下拉菜单*/
+#file-g{
+	cursor:default;
+}
+#file-g  .f-d-span a{
+	color: #3296ff;
+	font-style:italic;
+	font-size:16px;
+}
+#file-g .file-drop{
+	display:none;
+	position:relative;
+	height:20px;
+	line-height:15px;
+	transition:2s;
+	text-indent:20px;
+	margin-left:10px;
+}
+#file-g .active{
+	display:block;
+	animation:active .5s  1 linear both;
+}
+@keyframes active{
+	0%{transform:translatey(-3px);opacity:0;}
+	100%{transform:translatey(-1px);opacity:1;}
+}
+/*下拉菜单-end*/

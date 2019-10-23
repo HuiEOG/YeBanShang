@@ -1,0 +1,7 @@
+@charset "utf-8";
+/*头像外围圈动画*/
+@keyframes pp{
+	0%{transform:rotatez(0deg);}
+	100%{transform:rotatez(360deg);}
+}
+/*头像外围圈-end*/

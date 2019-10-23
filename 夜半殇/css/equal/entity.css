@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*¿çÍøÒ³ÏàÍ¬ÄÚÈÝ*/
+#entity{
+	position:relative;
+	width:1260px;
+	margin-top:0px;
+	padding-top:40px;
+	padding-bottom:40px;
+	box-sizing:border-box;
+	margin:auto;
+	transition:1s;
+}
+#article{
+	width:1000px;
+	margin-bottom:50px;
+	float:left;
+}
+#more{
+	width:120px;
+	height:100px;
+	margin:auto;
+	font-size:20px;
+	font-weight:bold;
+	color:#AEAEAE;
+	transition:1s;
+	text-align:center;
+	line-height:75px;
+	cursor:default;
+	user-select: none;
+	background:url('../../images/smallpic/moreout.png')no-repeat 0 0/cover,url('../../images/smallpic/morebottomout.png')no-repeat 0 0/cover;	
+}
+#more:hover{
+	color:#2a2a2a;
+	background:url('../../images/smallpic/more.png')no-repeat 0 0/cover,url('../../images/smallpic/morebottom.png')no-repeat 0 -15px/cover;
+}

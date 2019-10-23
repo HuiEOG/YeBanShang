@@ -1,0 +1,39 @@
+@charset "utf-8";
+#wait{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color: rgb(217, 217, 217);
+	transition:.3s;
+	opacity:1;
+	z-index:9999;
+}
+#wait.display{
+ 	opacity:0;
+ 	z-index:-99;
+}
+.w-il{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	margin:auto;
+}
+#w-icon{
+	width:130px;
+	height:130px;
+	border-radius:50%;
+}
+.w-linear{
+	width:170px;
+	height:170px;
+	border-radius:50%;
+}#wait span:nth-child(1){
+	animation:pp 1.5s linear infinite;
+	background:url("../../images/smallpic/linepic2.png")no-repeat 0 0/cover;
+ }
+#wait span:nth-child(2){
+	animation:pp 1.5s linear infinite reverse;
+	background:url("../../images/smallpic/linepic3.png")no-repeat 0 0/cover;
+}

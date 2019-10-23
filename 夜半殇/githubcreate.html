@@ -1,0 +1,300 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Author" content="夜半殇">
+<meta name="Keywords" content="夜半殇的个人辣鸡博客,雏子开发">
+<meta name="Description" content="夜半殇的个人辣鸡博客,就是个实验品">
+<title>Github-最基础、简单的上传本地项目到Github -夜半殇の尘封- Ass we can...</title>
+<link rel="shortcut icon" href="images/smallpic/icon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/equal/wait.css" media="all">
+<link rel="stylesheet" href="css/equal/init.css" media="all">
+<link rel="stylesheet" href="css/equal/totop.css" media="all">
+<link rel="stylesheet" href="css/equal/animation.css" media="all">
+<link rel="stylesheet" href="css/equal/footer.css" media="all">
+<link rel="stylesheet" href="css/equal/aside.css" media="all">
+<link rel="stylesheet" href="css/article.css" media="all">
+<link rel="stylesheet" href="css/equal/nav.css" media="all">
+<link rel="stylesheet" href="css/equal/entity.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/equal/GalMenu.css" />
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/GalMenu.js"></script>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+	document.addEventListener('visibilitychange',function(){
+	if(document.visibilityState === 'hidden') {
+	normal_title=document.title;
+	document.title='╮(￣▽￣)╭喔..散花啦~~ - Ass we can not...';
+	}else{
+		document.title='(*/ω＼*)我射麽都不知道...Ass ..';
+		setTimeout(" document.title=normal_title ",2000);
+	}
+	});
+</script>
+</head>
+<body id="top" class="bodyscroll">
+<div id="wait">
+	<span class="w-linear w-il"></span>
+	<span class="w-linear w-il"></span>
+	<img src="images/smallpic/wait.png" id="w-icon" class="w-il"/>
+</div>
+	<div class="GalMenu GalDropDown">
+	  <div class="circle" id="gal">
+		<div class="ring">
+		  <a href="index.html" target="_blank" title="首页" class="menuItem">首页</a>
+		  <a href="index.html" target="_blank" title="博客" class="menuItem">博客</a>
+		  <a href="index.html" target="_blank" title="文章归档" class="menuItem">归档</a>
+		  <a href="index.html" target="_blank" title="意想不到的东西" class="menuItem">杂货</a>
+		  <a href="index.html" target="_blank" title="屯图" class="menuItem">图库</a>
+		  <a href="index.html" target="_blank" title="留言" class="menuItem">留言</a>
+		</div>
+	   <audio id="audio" src="audio/open.wav"></audio>
+	  </div>
+	<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+	</div>
+<a href="#top" id="totop" ></a>
+<div id="nav">
+	<a href="index.html"><div id="nav-icon" title="空间跃进...~"></div></a>
+	<ul class="nav-ul">
+		<li class="nav-list fl-l clearfix">
+			<span class="nav-span-line n-s-line1"></span>
+			<span class="nav-span-line n-s-line2"></span>
+			<span class="nav-span-line n-s-line3"></span>
+			<span class="nav-span-line n-s-line4"></span>日常
+				<span class="nav-l-l">
+					<span class="nav-span-line n-s-l-line1"></span>
+					<span class="nav-span-line n-s-l-line2"></span>
+					<span class="nav-span-line n-s-l-line3"></span>
+					<span class="nav-span-line n-s-l-line4"></span>
+					瞎逛Pixiv</span>
+					<!--<span class="nav-l-l nav-l-l2">-->
+						<!--<span class="nav-span-line n-s-l-line1"></span>-->
+						<!--<span class="nav-span-line n-s-l-line2"></span>-->
+						<!--<span class="nav-span-line n-s-l-line3"></span>-->
+						<!--<span class="nav-span-line n-s-l-line4"></span>-->
+					<!--滴答滴答</span>-->
+		</li>
+		<li class="nav-list fl-l clearfix">
+		<span class="nav-span-line n-s-line1"></span>
+		<span class="nav-span-line n-s-line2"></span>
+		<span class="nav-span-line n-s-line3"></span>
+		<span class="nav-span-line n-s-line4"></span>工具
+			<a href="https://pan.baidu.com/s/1c3oq5oO"><span class="nav-l-l nav-l-l1">
+						<span class="nav-span-line n-s-l-line1"></span>
+						<span class="nav-span-line n-s-l-line2"></span>
+						<span class="nav-span-line n-s-l-line3"></span>
+						<span class="nav-span-line n-s-l-line4"></span>
+					waifu2x</span></a>
+			<a href="https://pan.baidu.com/s/1eTrAoTk"><span class="nav-l-l nav-l-l2">
+						<span class="nav-span-line n-s-l-line1"></span>
+						<span class="nav-span-line n-s-l-line2"></span>
+						<span class="nav-span-line n-s-l-line3"></span>
+						<span class="nav-span-line n-s-l-line4"></span>
+			TACon</span></a>
+		</li>
+		<li class="nav-list fl-l clearfix">
+		<span class="nav-span-line n-s-line1"></span>
+		<span class="nav-span-line n-s-line2"></span>
+		<span class="nav-span-line n-s-line3"></span>
+		<span class="nav-span-line n-s-line4"></span>归档</li>
+		<li class="nav-list fl-l clearfix">
+		<span class="nav-span-line n-s-line1"></span>
+		<span class="nav-span-line n-s-line2"></span>
+		<span class="nav-span-line n-s-line3"></span>
+		<span class="nav-span-line n-s-line4"></span>关于我</li>
+		<li class="nav-list fl-l clearfix">
+		<span class="nav-span-line n-s-line1"></span>
+		<span class="nav-span-line n-s-line2"></span>
+		<span class="nav-span-line n-s-line3"></span>
+		<span class="nav-span-line n-s-line4"></span>++ing...</li>
+	</ul>
+</div>
+<div id="entity">
+	<div id="article" class="clearfix article-bg">
+		<div id="ar-content">
+			<div id="ar-top">
+				<div id="ar-t-h1">
+					<h1>[教程]    通过Github Desktop最基础、简单的上传本地项目到Github</h1>
+					<span class="ar-t-h-span ar-t-h-name">夜半殇</span>
+					<span class="ar-t-h-span ar-t-h-time">2018年1月21日</span>
+				</div>
+				<img src="images/github/githubtop.png" id="toppic"  alt="github" />
+			</div>
+			<div class="ar-text">
+				<p class="ar-t-p"><span class="ar-t-p-line" style="width:170px;"></span>注册Github账号</p>
+				<p class="ar-t-content">∟唔，注册账号总会吧！！过啦~~</p>
+			</div >
+            <div class="ar-text">
+                <p class="ar-t-p"><span class="ar-t-p-line" style="width:170px;"></span>创建存储库</p>
+                <p class="ar-t-pic">
+                    <img src="images/github/11.png" alt="原图" width="800px;" height="200px;"/>
+                    <img src="images/github/22.png" alt="原图" width="800px;" height="250px;"/>
+                </p>
+                <p class="ar-t-content">∟创建存储库,两者都可以(找到就好啦-_-)...</p>
+            </div >
+            <div class="ar-text">
+                <p class="ar-t-p"><span class="ar-t-p-line" style="width:170px;"></span>填写相关信息</p>
+                <p class="ar-t-pic">
+                    <img src="images/github/33.png" alt="原图" width="800px;" height="500px;"/>
+                </p>
+                <p class="ar-t-content">∟填写项目名称与其它信息,可以选择公开或者加密升级为私人库，但私人库需要上交7美元/月...</p>
+            </div >
+            <div class="ar-text">
+                <p class="ar-t-p"><span class="ar-t-p-line" style="width:170px;"></span>运行Github Desktop</p>
+                <p class="ar-t-pic">
+                    <img src="images/github/44.png" alt="原图" width="800px;" height="500px;"/>
+                </p>
+                <p class="ar-t-content">∟选择Set up in Desktop <a href="https://desktop.github.com/" target="_blank" class="ar-text-href">（Github Desktop下载）</a>...</p>
+            </div >
+            <div class="ar-text">
+                <p class="ar-t-p"><span class="ar-t-p-line" style="width:170px;"></span>创建项目</p>
+                <p class="ar-t-pic">
+                    <img src="images/github/55.png" alt="原图" width="800px;" height="500px;"/>
+                </p>
+                <p class="ar-t-content">∟打开Github Desktop后选择项目文件夹在本地的位置...</p>
+                <p class="ar-t-pic">
+                    <img src="images/github/66.png" alt="原图" width="800px;" height="100px;"/>
+                </p>
+                <p class="ar-t-content">∟创建完成后，在目标地址会有一个我们所创建的文件夹...</p>
+            </div >
+            <div class="ar-text">
+                <p class="ar-t-p"><span class="ar-t-p-line" style="width:170px;"></span>添加文件</p>
+                <p class="ar-t-pic">
+                    <img src="images/github/77.png" alt="原图" width="800px;" height="500px;"/>
+                </p>
+                <p class="ar-t-content">∟把我们所需要上传的文件项目放进mm文件夹中，返回Github Desktop会发现我们所有的项目都呈现在Github Desktop中，然后在summary和Desription填写标题与描述信息<span class="ar-text-mark">（summary为必填）</span>...</p>
+                <p class="ar-t-pic">
+                <img src="images/github/88.png" alt="原图" width="400px;" height="70px;"/>
+            </p>
+                <p class="ar-t-content">∟点击commit to master...</p>
+            </div >
+            <div class="ar-text">
+                <p class="ar-t-p"><span class="ar-t-p-line" style="width:170px;"></span>Publish branch</p>
+                <p class="ar-t-pic">
+                    <img src="images/github/99.png" alt="原图" width="400px;" height="70px;"/>
+                </p>
+                <p class="ar-t-content">∟最后Publish branch上传同步到Github上...</p>
+            </div >
+            <div class="ar-text">
+                <p class="ar-t-p"><span class="ar-t-p-line" style="width:170px;"></span>上传成功</p>
+                <p class="ar-t-pic">
+                    <img src="images/github/110.png" alt="原图" width="800px;" height="150px;"/>
+                </p>
+                <p class="ar-t-content">∟返回网站上的Github中刷新，我们的项目已经上传成功...</p>
+            </div >
+            <div class="ar-text">
+                <p class="ar-t-p"><span class="ar-t-p-line" style="width:50px;"></span>注意</p>
+                <div class="ar-t-content">
+                    <p class="ar-t-text">1、在创建存储库时，若本地目标地址有之前相同名字的已经创建过的存储库将不会创建成功 <span class="ar-text-mark" style="color:#ff5a57;">The destination alrea exist.</span></p>
+                    <p class="ar-t-pic">
+                        <img src="images/github/rr.png" alt="原图" width="600px;" height="300px;"/>
+                    </p>
+                    <p class="ar-t-text">2、若一开始先在Github Desktop中创建本地项目，然后在进行上传到Github上也会失败，因为在github上并没有所对应的Github存储库 <span class="ar-text-mark" style="color:#ff5a57;">Please upgrade your plan to create a new private repository.</span></p>
+                    <p class="ar-t-pic">
+                        <img src="images/github/tt.png" alt="原图" width="600px;" height="300px;"/>
+                    </p>
+                    <p class="ar-t-text">3、过程中可能还有一些其他错误,请自行百度谷歌...</p>
+                </div>
+            </div >
+			<div id="article-top">----若没有差劲的前车之鉴又何来的完美----</div>
+		</div>
+	<div id="more">-Link Start-</div>
+	</div>
+	<div id="aside" class="clearfix">
+		<div id="file">
+			<h1 class="aside-h">归档</h1>
+			<ul id="file-g">
+				<li class="file-list"><span class="f-list-line"></span>2018年01月21日</li>
+				<li class="file-drop  f-d-span"><span class="f-list-line"></span><a href="githubcreate.html">∟GitHub简单教程</a></li>
+				<li class="file-list"><span class="f-list-line"></span>2017年12月09日</li>
+				<li class="file-drop  f-d-span"><span class="f-list-line"></span><a href="waifu2x.html">∟waifu2x-caffe</a></li>
+			</ul>
+		</div>
+		<div id="file">
+			<h1 class="aside-h">小工具</h1>
+			<ul id="file-g">
+				<li class="file-list"><span class="f-list-line"></span>waifu2x-caffe</li>
+				<li class="file-drop f-d-span"><span class="f-list-line"></span><a href="https://pan.baidu.com/s/1c3oq5oO" target="_blank">∟waifu2x-caffe网盘</a></li>
+				<li class="file-list"><span class="f-list-line"></span>TAudioConverter</li>
+				<li class="file-drop  f-d-span"><span class="f-list-line"></span><a href="https://pan.baidu.com/s/1eTrAoTk" target="_blank">∟TC网盘</a></li>
+			</ul>
+		</div>
+		<!--Pixiv.BY超能小紫-->
+		<div id="pixiv">
+			<h1 class="aside-h">Pixiv每日Top50</h1>
+			<iframe src="https://cloud.mokeyjay.com/pixiv/?color=DADADA" frameborder="0"  style="width:236px; height:380px;"></iframe>
+		</div>
+		<!--Pixiv.BY超能小紫-end-->
+	</div>
+</div>
+<div id="footer">
+	<ul>
+		<li class="f-li">
+			<ul class="f-link">
+				<a href="index.html"><li>网站首页&nbsp&nbsp|</li></a>
+				<a href="index.html"><li>联系本人&nbsp&nbsp|</li></a>
+				<a href="index.html"><li>归档&nbsp&nbsp|</li></a>
+				<a href="index.html"><li>(>ω･* )ﾉ</li></a>
+			</ul>
+		</li>
+		<li  id="time" class="f-li"></li>
+		<li class="f-li">© 2017 - <a href="http://www.cclast.cc">夜半殇cclast</a> - All rights reserved</li>
+		<li class="f-li">粤ICP备17145700号</li>
+	</ul>
+</div>
+<div id="totop" ></div>
+</body>
+<script src="js/Allarticle.js"></script>
+<script>
+    var ofilelist=document.getElementsByClassName('file-list'),
+        ofiledrop=document.getElementsByClassName('file-drop'),
+        length=ofilelist.length;
+    for (var i=0;i < length; i++)
+    {
+        ofilelist[i].list=i;
+        ofilelist[i].onclick=function(){
+            var ofon=ofiledrop[this.list];
+            ofon.classList.toggle("active");
+        };
+    }
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('html').GalMenu({
+		'menu': 'GalDropDown'
+		});
+		$(document).on('click','.menuItem',function(){
+		  $(".circle").removeClass("open");
+		  $("#overlay").hide();
+		  $(".GalMenu").delay(400).hide(0);
+		});
+	});
+</script>
+<script type="text/javascript">
+	var time=document.getElementById('time');
+	var today=new Date(2018,0,23);
+	function timer(){
+		var nowdate= new Date();
+		var mins =  today - nowdate ;
+		mins = Math.floor(mins/1000);
+		var d=Math.abs(Math.floor(mins/60/60/24));
+		var h=Math.abs(Math.floor(mins/60/60)%24);
+		var m=Math.abs(Math.floor(mins/60)%60);
+		var s=Math.abs(mins%60); //秒
+		var txt=document.getElementById('time').innerHTML;	
+		d=timelist(d);
+		h= timelist(h);
+		m=timelist(m);	
+		s=timelist(s);
+		txt="已苟活" + d +"天" + h +"小时"+ m +"分钟"+ s +"秒" + "╰(￣▽￣)╭"; 
+		time.innerHTML= txt ;	
+		return timer;
+	}
+	function timelist(x){
+			return x < 10?"0" + x:x; 
+	}
+	timer();
+	setInterval("timer()",1000);
+</script>
+</html>

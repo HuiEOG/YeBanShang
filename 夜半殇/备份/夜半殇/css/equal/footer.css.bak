@@ -1,0 +1,34 @@
+@charset "utf-8";
+#footer{
+	width:100%;
+	height:110px;
+	margin:0px auto 10px;
+	padding-top:10px;
+	text-align:center;
+	background-color:rgba(120,120,120,.9);
+	float:left;
+}
+#footer li a{
+	color:#b9b9b9;
+	font-style:oblique;
+}
+#footer li a:hover{
+	color:#085265;
+	font-style:oblique;
+}
+#footer .f-li{
+	width:400px;
+	height:20px;
+	font-size:16px;
+	color:#d6d6d6;
+	margin:5px auto 10px;
+}
+.f-link{
+	width:400px;
+	height:20px;
+}
+.f-link li{
+	display:inline-block;
+	font-size:15px;
+	margin:0px 5px 0px;
+}

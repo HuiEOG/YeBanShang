@@ -1,0 +1,45 @@
+@charset "utf-8";
+#vansish{
+	position:absolute;
+	bottom:0px;
+	left:0;
+	right:0;
+	width:500px;
+	height:600px;
+	margin:auto;
+	transition:1s;
+	z-index:-4;
+}
+#vansish img{
+	position:absolute;
+	width:500px;
+	height:600px;
+}
+#vansish .vansishpic{
+	z-index:1;
+}
+#vansishonclick{
+	position:absolute;
+	bottom:2px;
+	right:-40px;
+	width:100px;
+	height:100px;
+	background:url('../../images/vansishonclick.png')no-repeat 0 0/100px;
+}
+/*北方栖姬飞行*/
+@keyframes vanon{
+	0%{right:-40px;}
+	100%{right:1800px;}
+}
+@keyframes vanreturn{
+	0%{right:1800px;transform:rotate(0deg);}
+	100%{right:-40px;transform:rotate(720deg);}
+}
+
+.vantoleft{
+	animation:vanon 1s 0s 1 both;
+}
+.vantoright{
+	animation:vanreturn 1s 0s 1 both;
+}
+/*北方栖姬飞行-end*/

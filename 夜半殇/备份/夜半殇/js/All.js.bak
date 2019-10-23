@@ -1,0 +1,121 @@
+//隐藏的滑动
+	var Ovansishonclick=document.getElementById('vansishonclick'),
+		  Ovansish=document.getElementById('vansish'),
+		  Ovansishpic=document.getElementById('vansishpic'),
+		  Oentity=document.getElementById('entity');
+	var fly=true;
+	Ovansishonclick.onclick=function(){
+		if(fly){	
+			Ovansishonclick.className="vantoleft";
+			Ovansishpic.className=" vansishpic";
+			Oentity.style.marginTop="530px";
+			Ovansish.style.bottom="-600px";
+		}
+		else{
+			Ovansishonclick.className="vantoright";
+			Oentity.style.marginTop="0px";
+			Ovansish.style.bottom="0px";
+			Ovansish.style.position="absolute";
+		}
+	 fly=!fly;
+	}
+//隐藏的滑动-end
+
+//窗口平滑
+	$(document).ready(function() {  
+	 var $root = $('html, body');  //选择器缓存起来。这样每次点击时就不需要再重新查找了
+	 $('a').click(function() {
+		 var href = $.attr(this, 'href');
+		 $root.animate({
+		 scrollTop: $(href).offset().top
+		 }, 500, function () {
+			 window.location.hash = href;
+		 });
+		 return false;
+	 });
+	});  
+	function delayURL(url,time){
+	 setTimeout("top.location.href = '" + url + "'",time);
+	 }
+//窗口平滑-end
+
+//飞机
+	var Oflyr=document.getElementsByClassName("i-c-s-s-r"),
+		Oflyl=document.getElementsByClassName("i-c-s-s-l"),
+		Ofnnt=document.getElementsByClassName("font-r"),
+		Ofnntl=document.getElementsByClassName('font-l'),
+		lengthr=Oflyr.length,
+		lengthl=Oflyl.length,
+		a=["http://www.jb51.net/article/45215.htm","rr"],
+		b=["https://www.waifu2x.com/","ee"];
+		//右方飞机
+	for(var i=0;i<lengthr;i++){
+			Ofnnt[i].fly=i; 
+			Ofnnt[i].onclick=function(){
+				Oflyr[this.fly].style.right="1300px";
+				fn(b[this.fly]);
+			};//Ofnnt.onclick的括号
+		}//for的括号
+		//左方飞机
+	for(var i=0;i<lengthl;i++){
+			Ofnntl[i].fly=i; 
+			Ofnntl[i].onclick=function(){
+				Oflyl[this.fly].style.left="1300px";
+				fn(a[this.fly]);
+			};//Ofnntl.onclick的括号
+		}//for的括号
+		//飞机调用的函数
+		function fn (x){
+			setTimeout(function(){window.location.href =x;},300)	
+			} 
+//飞机-end
+
+//顶部高度随着浏览器变化
+	var blank=document.getElementById("blank");
+	blankheightchange();
+	window.onresize=blankheightchange;
+	function blankheightchange(){
+		var BOMHeight=document.documentElement.clientHeight;
+		blank.style.height=BOMHeight +"px";
+	}
+//顶部高度随着浏览器变化-end
+
+//返回顶部按钮事件
+	var totopbtn=document.getElementById("totop"),
+		 blankHeight=blank.clientHeight/2;
+		 totopbtnTime();
+	function totopbtnTime(){
+		clearTimeout=wheelset;
+		var wheelset=setTimeout(function(){
+			var Sto=document.documentElement.scrollTop + document.body.scrollTop;
+			if (Sto > blankHeight )
+			{
+				totopbtn.classList.add("block");
+			}else{
+				totopbtn.classList.remove("block");
+			}
+		} , 13);
+	}
+	addWheelEvent( document , totopbtnTime);
+	function addWheelEvent( obj , eFn ){
+		document.addEventListener?obj.addEventListener(document.createElement("div").onmousewheel===null?"mousewheel":"DOMMouseScroll",fn,false):obj.attachEvent("onmousewheel",fn);
+		function fn(e){eFn.call(obj , e = e || window.event , e.wheelDelta/120 || -e.detail/3);}
+	}
+	totopbtn.onclick=function(){
+		this.classList.remove("block");
+	};
+//返回顶部按钮事件-end
+
+//等待加载事件
+var wait=document.getElementById("wait");
+function preventDefault(e){
+	e=e || window.event;
+	e.preventDefault && e.preventDefault();
+	return false;
+}
+addWheelEvent(wait , preventDefault);
+window.onload=setTimeout(function(){
+	wait.classList.add("display");
+},3000);
+//等待加载事件-end
+

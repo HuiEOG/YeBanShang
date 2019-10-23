@@ -1,0 +1,177 @@
+@charset "utf-8";
+html,body {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+body {
+	font-size:1.1rem;
+	font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+a {
+	text-decoration:none;
+	outline:0;
+}
+.GalMenu {
+	margin:0;
+	padding:0;
+	display:none;
+	position:fixed;
+	z-index:999;
+}
+.circle  .ring{
+	position:relative;
+	width:1px;
+	height:1px;
+} 
+.circle {
+	margin:0 auto;
+}
+.ring {
+	opacity:0;
+	top:150px;
+	left:60px;
+	-webkit-transform-origin:0% 0%;
+	-moz-transform-origin:0% 0%;
+	transform-origin:0% 0%;
+	-webkit-transform:translateX(0px);
+	-moz-transform:translateX(0px);
+	-transform: translateX(0px);
+	-webkit-transition:all 0.4s ease-out;
+	-moz-transition:all 0.4s ease-out;
+	transition:all 0.4s ease-out;
+		z-index:999;
+
+}
+.open .ring {
+	opacity:1;
+	-webkit-transform:translateX(10px);
+	-moz-transform:translateX(10px);
+	-transform:translateX(10px);
+}
+
+.center {
+	background-color:rgba(255,255,255,0.3);
+	border:2px solid #ffffff;
+	bottom:0;
+	color:white;
+	height:80px;
+	left:0;
+	line-height:80px;
+	margin:auto;
+	position:absolute;
+	right:0;
+	text-align:center;
+	top:0;
+	width:80px;
+	-webkit-transition:all 0.4s ease-out;
+	-moz-transition:all 0.4s ease-out;
+	transition:all 0.4s ease-out;
+}
+.open .center {
+	border-color:#aaaaaa;
+}
+.menuItem {
+	color:#66ffff;
+	display:block;
+	width:150px;
+	height:30px;
+	line-height:30px;
+	margin-left:-41px;
+	margin-top:-41px;
+	position:absolute;
+	text-align:center;
+	background-size:80px;
+	border:1px solid #505050;
+/*  	box-shadow:0px 0px 5px #fff;
+ 		-webkit-box-shadow:0px 0px 5px #fff;
+ 		-moz-box-shadow:0px 0px 5px #fff;  */
+}
+.menuItem:hover {
+	box-shadow:inset 0px 0px 80px #F0C026;
+/* 	-webkit-box-shadow:inset 0px 0px 80px #66ffff;
+	-moz-box-shadow:inset 0px 0px 80px #66ffff; */
+}
+@keyframes dd{
+	0%{	-webkit-transform:translateX(-20px);
+			-moz-transform:translateX(-20px);
+			-transform: translateX(-20px);
+			opacity:0;
+		}
+	100%{	-webkit-transform:translateX(30px);
+				-moz-transform:translateX(30px);
+				-transform:translateX(30px);
+				opacity:1;
+				}
+}
+
+
+
+.ring a:nth-of-type(1) {	
+	animation:dd 1s 0s 1 ease-out both;
+	-webkit-animation:dd 1s 0s 1 ease-out both;
+	-moz-animation:dd 1s 0s 1 ease-out both;  
+	top:40px;
+}
+.ring a:nth-of-type(2) {
+	animation:dd 1s 0.2s 1 ease-out both;
+	-webkit-animation:dd 1s 0.2s 1 ease-out both;
+	-moz-animation:dd 1s 0.2s 1 ease-out both;
+	top:73px;
+}
+.ring a:nth-of-type(3) {
+	animation:dd 1s 0.4s 1 ease-out both;
+	-webkit-animation:dd 1s 0.4s 1 ease-out both;
+	-moz-animation:dd 1s 0.4s 1 ease-out both;
+	top:106px;
+}
+.ring a:nth-of-type(4) {
+	animation:dd 1s 0.6s 1 ease-out both;
+	-webkit-animation:dd 1s 0.6s 1 ease-out both;
+	-moz-animation:dd 1s 0.6s 1 ease-out both;
+	top:139px;
+}
+.ring a:nth-of-type(5) {
+	animation:dd 1s 0.8s 1 ease-out both;
+	-webkit-animation:dd 1s 0.8s 1 ease-out both;
+	-moz-animation:dd 1s 0.8s 1 ease-out both;
+	top:172px;
+}
+.ring a:nth-of-type(6) {
+	animation:dd 1s 1s 1 ease-out both;
+	-webkit-animation:dd 1s 1s 1 ease-out both;
+	-moz-animation:dd 1s 1s 1 ease-out both;
+	top:205px;
+}
+.ring a {
+	display:inline-block;
+	border-radius:2px;
+	opacity:0;
+	color:#222222;
+	left:100px;
+	background:rgba(210,210,210,.3);
+/* 	text-shadow:#cfcfcf 1px 0 0,#cfcfcf 0 1px 0,#cfcfcf -1px 0 0,#cfcfcf 0 -1px 0;
+	-webkit-text-shadow:#cfcfcf 1px 0 0,#cfcfcf 0 1px 0,#cfcfcf -1px 0 0,#cfcfcf 0 -1px 0;
+	-moz-text-shadow:#cfcfcf 1px 0 0,#cfcfcf 0 1px 0,#cfcfcf -1px 0 0,#cfcfcf 0 -1px 0;
+	*filter:Glow(color=#cfcfcf ,strength=1); */
+}
+.ring a:hover {
+	color:#ffffff;
+/* 	text-shadow:#66CCFF 1px 0 0,#66CCFF 0 1px 0,#66CCFF -1px 0 0,#66CCFF 0 -1px 0;
+	-webkit-text-shadow:#66CCFF 1px 0 0,#66CCFF 0 1px 0,#66CCFF -1px 0 0,#66CCFF 0 -1px 0;
+	-moz-text-shadow:#66CCFF 1px 0 0,#66CCFF 0 1px 0,#66CCFF -1px 0 0,#66CCFF 0 -1px 0;
+	*filter:Glow(color=#66CCFF,strength=1); */
+}
+#overlay {
+	height:100%;
+	position:fixed;
+	width:100%;
+	left:0;
+	top:0;
+	background:url("") repeat scroll 0 0 rgba(0,0,0,0.5);
+	display:none;
+}
+

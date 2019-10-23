@@ -1,0 +1,216 @@
+@charset "utf-8";
+/*主体内容*/
+/*公告*/
+#e-toptext{
+		width:600px;
+		height:50px;
+		margin:0px auto 30px;
+		padding-top:10px;
+		background-color:#e7e7e7;
+		border-radius:3px;
+		box-sizing:border-box;
+		box-shadow:1px 1px 5px 0px #333333;
+		cursor:default;
+	}
+#e-toptext .e-t-text{
+	position:relative;
+	width:500px;
+	height:30px;
+	line-height:30px;
+	margin:auto;
+	color:#8d8d8d;
+	font-size:16px;
+	text-indent:40px;
+}
+#e-toptext .e-t-text:before{
+	content:'';
+	display:block;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:30px;
+	height:30px;
+	background:url('../../images/smallpic/laba.png')no-repeat 5px 4px/20px;
+}
+/*公告-end*/
+
+/*内容块*/
+#infor{
+	width:1000px;
+	margin:0px auto 40px;
+}
+#infor .i-cont{
+	position:relative;
+	display:block;
+	width:960px;
+	height:494px;
+	padding:20px;
+	overflow:hidden; 
+	transition:.6s;
+	border-radius:5px;
+	background:rgba(230,230,230,0.8);
+}
+#infor .i-cont:hover{
+	box-shadow:0 0 5px 2px #808080;
+}
+#infor .i-cont:hover .i-c-span-r,#infor .i-cont:hover .i-c-span-l{
+	opacity:1;
+}
+/*图片*/
+#infor .infor-pic{
+	width:960px;
+	height:300px;
+}
+/*图片-end*/
+
+/*标题*/
+#infor .infor-text{
+	width:960px;
+	height:160px;
+	margin-bottom:10px;
+}
+#infor .infor-text a{
+	display:inline-block;
+	height:42px;
+	margin:10px auto 5px;
+	border-bottom:1px solid #b5b5b5;
+	font-size:30px;
+	font-weight:bold;
+}
+#infor .infor-text a:hover{
+	color:#003a57;
+}
+#infor .infor-text p{
+	width:960px;
+	height:105px;
+	font-size:17px;
+	color:#4e4e4e;
+	border-bottom:1px solid #b5b5b5;
+}
+/*标题-end*/
+
+/*时间与名称信息*/
+.i-c-span{
+	display:inline-block;
+	position:relative;
+	height:30px;
+	font-size:15px;
+	line-height:28px;
+	text-indent:32px;
+	color:#646464;
+}
+.i-c-name{
+	width:150px;
+}
+.i-c-time{
+	width:230px;
+}
+.i-c-span:before{
+	content:'';
+	display:block;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.i-c-name:before{
+	width:28px;
+	height:28px;
+	background:url('../../images/smallpic/user.png') no-repeat 0 0 /cover;
+}
+.i-c-time:before{
+	width:25px;
+	height:25px;
+	background:url('../../images/smallpic/date.png') no-repeat 0 0 /cover;
+}
+.i-c-span:hover{
+	color:#003a57;
+}
+/*时间与名称信息-end*/
+
+/*页目按钮*/
+#jump-btn{
+	position:relative;
+	width:960px;
+	height:200px;
+	margin:auto;
+}
+#jump-btn ul{
+	width:300px;
+	margin:auto 10px 0px;
+}
+#jump-btn .j-btn,#jump-btn .j-btn-lue{
+	float:left;
+	width:40px;
+	height:40px;
+	margin:auto 5px 0px;
+	transition:.1s;
+	line-height:40px;
+	text-align:center;
+	font-size:21px;
+	border-radius:3px;
+}
+#jump-btn .j-btn,#jump-btn .j-btn-lue{
+	box-shadow:0 0 5px 1px #f2f2f2 inset;
+	background:rgba(200,200,200,.9);
+	color:#004488;
+	cursor:default;
+}
+#jump-btn .j-btn:hover{
+	background:rgba(70,70,70,.7);
+	color:#f2f2f2;
+}
+
+/*页目按钮-end*/
+
+/*主体内容-end*/
+
+/*右方进入*/
+.i-c-span-r{
+	right:0px;
+	border-right:40px solid rgba(120,120,120,.6);
+}
+.i-c-s-s-r{	
+	right:-60px;
+	background:url('../../images/smallpic/planr.png') no-repeat 0 0 /60PX;
+}
+.i-c-span-r:hover + .i-c-s-s-r,.i-c-s-s-r:hover{
+	right:-19px;
+}
+/*右方进入-end*/
+/*相同进入*/
+.i-c-span-r,.i-c-span-l{
+	display:block;
+	position:absolute;
+	width:25px;
+	height:220px;
+	top:90px;
+	transition:.7s;
+	opacity:0;
+	z-index:1;
+	border-top:50px solid transparent;
+	border-bottom:50px solid transparent;
+}
+.i-c-s-s-r,.i-c-s-s-l{
+	position:absolute;
+	display:block;
+	top:230px;
+	width:60px;
+	height:60px;
+	transition:.6s;
+	z-index:2;
+}
+/*相同进入-end*/
+
+/*左方进入*/
+.i-c-span-l{
+	left:0px;
+	border-left:40px solid rgba(120,120,120,.6);
+}
+.i-c-s-s-l{
+	left:-60px;
+	background:url('../../images/smallpic/planl.png') no-repeat 0 0 /60PX;
+}
+.i-c-span-l:hover + .i-c-s-s-l,.i-c-s-s-l:hover{
+	left:-19px;
+}
+/*左方进入-end*/

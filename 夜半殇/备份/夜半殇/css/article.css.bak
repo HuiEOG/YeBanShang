@@ -1,0 +1,144 @@
+@charset "utf-8";
+/*头部内容*/
+.article-bg{
+	margin-top:20px;
+	padding-top:30px;
+	border:1px solid #a3a3a3;
+	border-radius:5px;   
+	background-color:rgba(210,210,210,0.8);
+}
+#ar-top{
+	text-align:center;
+}
+#ar-t-h1{
+	width:930px;
+	height:70px;
+	margin:0 auto 10px;
+	border-bottom: 1px solid #7c7c7c;
+}
+#ar-t-h1 h1{
+	margin:auto;
+	font-size:28px;
+	color:#272727;
+}
+#ar-top #toppic{
+	width:930px;
+	height:300px;
+	margin:0 auto;
+}
+.ar-t-h-span:hover{
+	color:#003a57;
+}
+.ar-t-h-span{
+	position:relative;
+	display:inline-block;
+	height:30px;
+	margin-left:20px;
+	cursor:default;
+	font-size:15px;
+	text-indent:32px;
+	color:#646464;
+}
+.ar-t-h-name{
+	width:80px;
+	line-height:24px;
+}
+.ar-t-h-time{
+	width:145px;
+	line-height:28px;
+}
+.ar-t-h-span:before{
+	content:'';
+	display:block;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:25px;
+	height:25px;
+}
+.ar-t-h-name:before{
+	background:url('../images/smallpic/user.png') no-repeat 0 0 /cover;
+}
+.ar-t-h-time:before{
+	background:url('../images/smallpic/date.png') no-repeat 0 0 /cover;
+}
+/*头部内容-end*/
+/*主体内容*/
+.ar-text{
+	width:930px;
+	margin:10px auto 0;
+	border-top:1px solid #646464;
+}
+	/*标题*/
+.ar-t-p{
+	position:relative;
+	width:200px;
+	height:30px;
+	font-size:20px;
+	color:#005279;
+	font-style:italic;
+	margin:20px 10px 20px 0;
+}
+.ar-t-p:before{
+	content:'';
+	display:block;
+	position:absolute;
+	left:-5px;
+	top:3px;
+	width:0px;
+	height:30px;
+	border:1px solid #003399;
+}
+.ar-t-p-line{
+	display:block;
+	position:absolute;
+	left:-10px;
+	bottom:0px;
+	height:0px;
+	border:1px solid #003399;
+}
+	/*标题-end*/
+
+	/*文章内容*/
+.ar-t-content{
+	margin-bottom:10px;
+	font-size:18px;
+	color:#444;
+	line-height:37px;
+	text-indent:30px;
+}
+.ar-t-content .ar-t-li{
+	margin-bottom:5px;
+}
+.ar-t-li .ar-t-l-list{
+	margin-left:27px;
+}
+
+
+.ar-t-pic{
+	text-align:center;
+}
+/*高亮*/
+.ar-text-mark{
+	color:#0083c1;
+}
+/*高亮*/
+/*文章内容-end*/
+
+/*文章结尾*/
+#article-top{
+	width:930px;
+	height:50px;
+	margin:30px auto;
+	line-height:50px;
+	text-align:center;	
+	color:#a0a0a0;
+	font-style:italic;
+	font-size:20px;
+	user-select: none;
+	border-top:1px dashed #a0a0a0;
+	border-bottom:1px dashed #a0a0a0;
+}
+/*文章结尾-end*/
+
+/*主体内容-end*/

@@ -1,0 +1,145 @@
+@charset "utf-8";
+#nav{
+	position:fixed;
+	width:100%;
+	height:40px;
+	z-index:999;
+	background-color:rgba(70,70,70,.6);
+}
+#nav-icon{
+	display:inline-block;
+	position:absolute;
+	left:40px;
+	top:0px;
+	width:40px;
+	height:40px;
+	transition:.4s;
+	transform:rotate(0deg);
+	background:url('../../images/smallpic/icon.png')no-repeat 0 0/cover;
+}
+#nav-icon:hover{
+	transform:rotateY(360deg);
+}
+.nav-ul{
+	width:500px;
+	margin:auto;
+	box-sizing:border-box;
+	cursor:default;
+}
+.nav-list{
+	position:relative;
+	width:100px;
+	height:40px;
+	box-sizing:border-box;
+	text-align:center;
+	font-size:16px;
+	transition:.2s;
+	color:#d8d8d8;
+	line-height:40px;
+}
+.nav-list:hover,.nav-l-l:hover{
+	background-color:#005279;
+	color:#d8d8d8;
+}
+.nav-list:hover .nav-l-l{
+	visibility:visible;
+}
+
+.nav-l-l{
+	display:block;
+	position:absolute;
+	left:-10px;
+	top:40px;
+	width:120px;
+	color:#d8d8d8;
+	transition:.1s;
+	visibility:hidden;
+	background-color:rgba(70,70,70,.6);
+}
+.nav-l-l2{
+	top:80px;
+}
+
+/*假的幽灵线条*/
+.nav-span-line{
+	position:absolute;
+	display:inline-block;
+	transition-timing-function:linear;
+	animation-duration:0.5s;
+	animation-fill-mode:both;
+	-webkit-animation-fill-mode:both;
+}
+.n-s-line1,.n-s-l-line1{
+	left:12px;
+	top:8px;
+	width:0px;
+	height:2px;
+}
+
+.nav-list:hover .n-s-line1{
+	animation-name:line1 ;	
+	-webkit-animation-name:line1;
+}
+.n-s-line2,.n-s-l-line2{
+	left:17px;
+	top:32px;
+	width:0px;
+	height:2px;
+}
+.nav-list:hover .n-s-line2{
+	animation-name:line1 ;	
+	-webkit-animation-name:line1 ;
+}
+.n-s-line3,.n-s-l-line3{
+	left:15px;
+	top:4px;
+	width:2px;
+	height:0px;
+}
+.nav-list:hover .n-s-line3,.nav-l-l:hover .n-s-l-line3{
+	animation-name:line2 ;	
+	-webkit-animation-name:line2 ;
+}
+.n-s-line4{
+	left:86px;
+}
+.nav-list:hover .n-s-line4,.nav-l-l:hover .n-s-l-line4{
+	top:8px;
+	width:2px;
+	height:0px;
+	animation-name:line2;	
+	-webkit-animation-name:line2;
+}
+.nav-l-l:hover .n-s-l-line1{
+	animation-name:line3;	
+	-webkit-animation-name:line3;
+}
+.nav-l-l:hover .n-s-l-line2{
+	animation-name:line3 ;	
+	-webkit-animation-name:line3 ;
+}
+.n-s-l-line4{
+	left:102px;
+}
+/*假的幽灵线条-end*/
+
+
+/*导航幽灵线条??动画*/
+@-webkit-keyframes line1 /* Safari and Chrome */
+{
+0%   {background:#cdcdcd; }
+100% {background:#cdcdcd;  width:75px;}
+}
+
+@-webkit-keyframes line2 /* Safari and Chrome */
+{
+0%   {background:#cdcdcd; }
+100% {background:#cdcdcd;  height:30px;}
+}
+
+@-webkit-keyframes line3 /* Safari and Chrome */
+{
+0%   {background:#cdcdcd; }
+100% {background:#cdcdcd;  width:90px;}
+}
+/*导航幽灵线条??动画--end*/
